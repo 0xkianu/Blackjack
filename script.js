@@ -422,12 +422,13 @@ let shuffleDeck = () => {
   cards = document.querySelectorAll('.card');
 
   while (currentIndex != 0) {
-
+  
   randomIndex = Math.floor(Math.random() * currentIndex);
   currentIndex--;
 
   [deck[currentIndex], deck[randomIndex]] = [deck[randomIndex], deck[currentIndex]];
   }
+  
   myCard = deck[0];
   myCard2 = deck[2];
   dealerCard = deck[1];
