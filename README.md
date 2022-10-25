@@ -1,4 +1,4 @@
-https://0xkianu.github.io/Blackjack/
+https://0xkianu.github.io/blackjack-game/
 
 Blackjack game:
 - Uses 3 decks of cards (156 cards)
