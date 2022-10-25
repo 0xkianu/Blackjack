@@ -416,7 +416,9 @@ let playDealerHand = () => {
   dealerScoreBoard[0].innerText = dealerFinalScore;
   
   checkFinalScores();
-  deal.disabled = false;
+  setTimeout(function() {
+    deal.disabled = false;
+  }, delay);
 }
 
 /* Function to shuffle the deck */
