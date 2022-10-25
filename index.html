@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="table"> <!-- Casino table container -->
+        <div class="user-scene"> <!-- DIVs for user cards -->
+            <div class="scene">
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back"></div>
+                </div>
+            </div>
+            <div class="scene2">
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dealer-scene"> <!-- DIVs for dealer cards-->
+            <div class="scene3">
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back2"></div>
+                </div>
+            </div>
+            <div class="scene4">
+                <div class="card">
+                    <div class="card_face card_face--front"></div>
+                    <div class="card_face card_face--back4"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="announce-div"> <!-- DIV for game message announcements -->
+            <h1 id="announce-msg">''</h1>
+        </div>
+
+        <div class="wins-scoreboard">
+            <div class="wins-div">
+                <h4 class="win-label">USER WINS:</h4>
+                <div class="wins user">0</div><!-- DIV for game wins tracker -->
+            </div>
+
+            <div class="wins-div">
+                <h4 class="win-label">DEALER WINS:</h4>
+                <div class="wins dealer">0</div><!-- DIV for game wins tracker --> 
+            </div>
+        </div>
+        
+        <div class="scoreboard user">0</div> <!-- DIV for the user scoreboard -->
+        <h4 class="score-label">USER:</h4>
+        
+        <div class="scoreboard dealer">0</div> <!-- DIV for the dealer scoreboard -->
+        <h4 class="score-label">DEALER:</h4>
+
+        <!-- Game buttons -->
+        <div class="button-stand btn-div">
+            <button id="stand-btn" class="action-btn">STAND</button>
+        </div>
+        <div class="button-hit btn-div">
+            <button id="hit-btn" class="action-btn">HIT</button>
+        </div>
+        <div class="button-div btn-div">
+            <button id="deal-btn" class="action-btn">DEAL</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
