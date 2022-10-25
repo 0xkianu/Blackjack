@@ -244,14 +244,17 @@ let calcUserScore = (scoreArray,deckCards,scoreBoard) => {
 
     if(scoreArray.includes(21)) {
       if(arrayLen === 2) {
+        console.log(scoreArray);
         userContinue = false;
         dealerContinue = false;
         userFinalScore = 'blackjack';
+        setTimeout(function() {
+          scoreBoard[0].innerText = userFinalScore;
+        }, scoreDelay);
       }
       hit.disabled = true;
       stand.disabled = true;
       deal.disabled = false;
-      userFinalScore = 21;
       
       playDealerHand(); 
     }
